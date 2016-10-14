@@ -50,6 +50,7 @@ typedef struct objc_selector *SEL;
 我们可以利用 class_replaceMethod 来修改类，
 我们可以利用 method_setImplementation 来直接设置某个方法的IMP，
 归根结底，都是偷换了selector的IMP，如下图所示：
+
 ![img](http://img.blog.csdn.net/20130718230430859?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveWl5YWFpeHVleGk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 ####热修复在iOS中实现思路
